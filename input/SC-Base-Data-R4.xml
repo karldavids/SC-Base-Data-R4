@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- 此资源所引用的内容都将作为指南的一部分生成。持续更新中 -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
-	<id value="SC-Public-Health-IG"/>
+	<id value="SC-Base-Data-IG"/>
 	<!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
   </extension>-->
-	<url value="http://press.hl7fhir.cn/ImplementationGuide/SC-Public-Health-R4"/>
+	<url value="http://fhir.scwjxx.cn/Sichuan/ImplementationGuide/SC-Base-Data-R4"/>
 	<!-- 此实施指南的版本。除非指定了 "propagate-version" 扩展元素，否则所有引用资源都将继承此版本号 -->
 	<version value="0.0.2"/>
-	<name value="SC Public Health IG"/>
-	<title value="四川省公卫实施指南"/>
+	<name value="SC Base Data IG"/>
+	<title value="四川省基础信息实施指南"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<publisher value="HL7FHIR.CN" />
+	<publisher value="HL7FHIR.SC" />
 	<contact>
 		<telecom>
 			<system value="url"/>
@@ -23,8 +23,8 @@
 			<value value="contact@hl7fhir.cn"/>
 		</telecom>
 	</contact>
-	<description value="四川省公卫实施指南是[中国核心实施指南](http://build.fhir.org/ig/HL7China/CN-CORE-R4/)规范集中的一个子规范。
-它基于核心指南定义了四川省公共卫生信息化所涉及的通用资源与常用场景，它与其它子规范一起组成了中国核心指南的规范集。"/>
+	<description value="四川省基础信息实施指南是[中国核心实施指南](http://build.fhir.org/ig/HL7China/CN-CORE-R4/)规范集中的一个子规范。
+它基于核心指南定义了四川省卫生信息化所涉及的通用资源与常用场景，它与其它子规范一起组成了中国核心指南的规范集。"/>
 	<jurisdiction>
 		<coding>
 			<system value="http://CodeSystem.hl7fhir.cn/countries-and-regions"/>
@@ -32,7 +32,7 @@
 		</coding>
 		<text value="中国"/>
 	</jurisdiction>
-	<packageId value="hl7fhir.cn.core.r4.public-health.sc" />
+	<packageId value="hl7fhir.cn.core.r4.base-data.sc" />
 	<!-- 参见 https://spdx.org/licenses/AGPL-3.0-or-later.html -->
 	<license value="AGPL-3.0-or-later" />
 	<!-- 实施指南里的内容是基于FHIR R4版本的 -->
@@ -41,28 +41,251 @@
 		<!--0..* 生成IG需求信息。其中grouping节点可由IGPublisher自动定义，也可手动定义个性化需求。 -->
 
 		
-		<resource>
+	<resource>
 			<reference>
-				<!-- 本地资源定义（HospitalReferral） -->
-				<reference value="StructureDefinition/hospital-referral"/>
+				<!-- 本地资源定义（HospitalBed） -->
+				<reference value="StructureDefinition/hospital-bed"/>
 			</reference>
-			<description value="该资源描述住院转诊的的申请。包括上转、下转都使用该资源。"/>
+			<description value="描述医院病床信息"/>
 		</resource>
 
 		<resource>
 			<reference>
-				<!-- 本地资源定义（HospitalReferralResponse） -->
-				<reference value="StructureDefinition/hospital-referral-response"/>
+				<!-- 本地资源定义（PractitionerRole ） -->
+				<reference value="StructureDefinition/PractitionerRole"/>
 			</reference>
-			<description value="该资源描述在提交转诊申请后，由各个参与方 给出是否同意的转诊应答。包括 医生、患者。"/>
+			<description value="医务人员提供医疗服务时的岗位相关信息，包括所属组织、科室、角色/岗位等"/>
+		</resource>
+		
+		<resource>
+			<reference>
+				<!-- 本地资源定义（PreviousHistory） -->
+				<reference value="StructureDefinition/previous-history"/>
+			</reference>
+			<description value="既往史，既往史又称过去病史，即就医时医生向患者问询的患者既往的健康状况和过去曾经患过的疾病等方面的问题。
+既往健康状况包括饮食习惯等。病人平时健康状况，可能与其现患疾病有一定的关系，故对分析判断现发疾病的病情具有重要的参考价值。"/>
 		</resource>
 
 		<resource>
 			<reference>
-				<!-- 本地资源定义（participation-status） -->
-				<reference value="StructureDefinition/participation-status"/>
+				<!-- 本地资源定义（Patient） -->
+				<reference value="StructureDefinition/Patient"/>
 			</reference>
-			<description value="预约参与状态，描述预约参与人的应约状态，包括同意、拒绝、未知、未响应等。"/>
+			<description value="接受医疗健康服务的个人或动物，医疗过程是以患者为中心的。对交叉索进行中国本地化约定"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（Practitioner） -->
+				<reference value="StructureDefinition/Practitioner"/>
+			</reference>
+			<description value="直接或间接参与提供医疗健康服务的人员及其从业资格证"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（Department） -->
+				<reference value="StructureDefinition/Department"/>
+			</reference>
+			<description value="描述科室基本信息"/>
+		</resource>
+		
+		<resource>
+			<reference>
+				<!-- 本地资源定义（Organization） -->
+				<reference value="StructureDefinition/Organization"/>
+			</reference>
+			<description value="正式或非正式认可的群体或组织。包括医疗集团、医院、院区、科室、公司、机构、公司、部门、社区团体、医疗实践团体、医保、商保等。"/>
+		</resource>
+
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（Hospital） -->
+				<reference value="StructureDefinition/Hospital"/>
+			</reference>
+			<description value="描述医院基本信息"/>
+		</resource>
+
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（EndemicArea） -->
+				<reference value="StructureDefinition/EndemicArea"/>
+			</reference>
+			<description value="描述病区基本信息"/>
+		</resource>
+
+
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（Diagnose） -->
+				<reference value="StructureDefinition/Diagnose"/>
+			</reference>
+			<description value="诊断信息，从医学角度对人们的精神和体质状态作出的判断。对正常人的健康状态、劳动能力和某一特定的生理过程的判断；司法部门判定血缘关系和伤害性质也属诊断。用来认识疾病的诊断最广泛，是治疗、预后、预防的前提。"/>
+		</resource>
+
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（ChiefComplaint）  -->
+				<reference value="StructureDefinition/chief-complaint"/>
+			</reference>
+			<description value="是病人（来访者）自述自己的症状或（和）体征、性质，以及持续时间等内容。"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（Address） -->
+				<reference value="StructureDefinition/Address"/>
+			</reference>
+			<description value="符合中国描述地址习惯，并支持用行政区划编码生成详细地址和用于统计"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（CodeableConcept） -->
+				<reference value="StructureDefinition/CodeableConcept"/>
+			</reference>
+			<description value="可编码概念"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（ContactPoint） -->
+				<reference value="StructureDefinition/ContactPoint"/>
+			</reference>
+			<description value="联系方式，包括电话、传真、邮件等"/>
+		</resource>
+
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（Identifier） -->
+				<reference value="StructureDefinition/Identifier"/>
+			</reference>
+			<description value="标识符，唯一且明确地标识某个域中的实体。常作为业务标识符（业务ID)使用，在不同业务域中的唯一标识ID"/>
+		</resource>
+		
+		<resource>
+			<reference>
+				<!-- 本地资源定义（Reference） -->
+				<reference value="StructureDefinition/Reference"/>
+			</reference>
+			<description value="引用应该是对实际FHIR资源的引用，并且应该是可解析的(允许访问控制、临时不可用等)。解析可以通过从URL检索来实现，也可以在适用的情况下通过资源类型来实现，将绝对引用作为标准URL处理并在本地注册表/存储库中查找它。"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（OrganizationPicture） -->
+				<reference value="StructureDefinition/organization-picture"/>
+			</reference>
+			<description value="图片信息，主要描述 组织机构的相关图像信息，包括 logo和图片信息"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（Coding） -->
+				<reference value="StructureDefinition/Coding"/>
+			</reference>
+			<description value="术语编码类型"/>
+		</resource>
+
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（AdministrativeDivision） -->
+				<reference value="StructureDefinition/AdministrativeDivision"/>
+			</reference>
+			<description value="行政区划编码，中国县级以上行政区"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（Period） -->
+				<reference value="StructureDefinition/Period"/>
+			</reference>
+			<description value="由开始和结束时间组成的时间段范围。"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（ChineseEthnicity） -->
+				<reference value="StructureDefinition/ChineseEthnicity"/>
+			</reference>
+			<description value="中华56个民族"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（ChineseName） -->
+				<reference value="StructureDefinition/ChineseName"/>
+			</reference>
+			<description value="中国卫生健康场景中使用的姓名"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（date-start-work） -->
+				<reference value="StructureDefinition/date-start-work"/>
+			</reference>
+			<description value="描述该人员参加工作的开始日期"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（is-work-for-multi-org） -->
+				<reference value="StructureDefinition/is-work-for-multi-org"/>
+			</reference>
+			<description value="是否多地点执业医师，医师多点执业：是指符合条件的执业医师经卫生行政部门注册后，受聘在两个以上医疗机构执业的行为。"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（Nationality） -->
+				<reference value="StructureDefinition/Nationality"/>
+			</reference>
+			<description value="国籍"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（politic-affiliation） -->
+				<reference value="StructureDefinition/politic-affiliation"/>
+			</reference>
+			<description value="政治面貌的编码及加入日期"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 本地资源定义（sexual-distinction-of-human） -->
+				<reference value="StructureDefinition/sexual-distinction-of-human"/>
+			</reference>
+			<description value="描述人的生理性别  遵循标准 GB/T 2261.1"/>
+		</resource>
+
+
+		<resource>
+			<reference>
+				<!-- 请求紧急程度（priority） -->
+				<reference value="StructureDefinition/request-priority"/>
+			</reference>
+			<description value="请求紧急程度"/>
+		</resource>
+		<resource>
+			<reference>
+				<!-- 备注信息（Annotation） -->
+				<reference value="StructureDefinition/Annotation"/>
+			</reference>
+			<description value="需要备注的额外信息，包括作者与创建时间。"/>
+		</resource>
+		<resource>
+			<reference>
+				<!-- 本地资源定义（BriefIntroduction） -->
+				<reference value="StructureDefinition/BriefIntroduction"/>
+			</reference>
+			<description value="简要介绍，包括科室、医院、医护人员介绍"/>
 		</resource>
 
 		<!--<resource>
@@ -72,239 +295,22 @@
 </resource> -->
 
 		
-		<resource>
-			<reference>
-				<!-- 资源示例 -->
-				<reference value="Appointment/HospitalReferral-example"/>
-			</reference>
-			<name value="转诊预约申请示例"/>
-			<description value="演示如何定义和引用转诊预约申请的简单示例"/>
-			<exampleCanonical value="http://StructureDefinition.hl7fhir.cn/hospital-referral"/>
-		</resource>
-
-
-		<resource>
-			<reference>
-				<!-- 资源示例 -->
-				<reference value="AppointmentResponse/HospitalReferralResponse-example"/>
-			</reference>
-			<name value="转诊预约应答示例"/>
-			<description value="演示如何定义和引用转诊预约应答的简单示例"/>
-			<exampleCanonical value="http://StructureDefinition.hl7fhir.cn/hospital-referral-response"/>
-		</resource>
 		
-		<resource>
-			<reference>
-				<!-- 资源示例 -->
-				<reference value="AppointmentResponse/PatientArriveResponse-example"/>
-			</reference>
-			<name value="患者到诊应答示例"/>
-			<description value="演示如何定义和引用患者到诊应答的简单示例"/>
-			<exampleCanonical value="http://StructureDefinition.hl7fhir.cn/hospital-referral-response"/>
-		</resource>
-
-		<resource>
-			<reference>
-				<!-- 资源示例 -->
-				<reference value="Task/medicalrecordssubmitted-example"/>
-			</reference>
-			<name value="上传完整病历示例"/>
-			<description value="演示如何定义和引用上传完整病历的简单示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Task"/>
-		</resource>
 		
 		
 		
 
-		<resource>
-			<reference>
-				<!-- ActivityDefinition资源示例 -->
-				<reference value="ActivityDefinition/ad-hospital-referral"/>
-			</reference>
-			<name value="转诊预约申请ActivityDefinition示例"/>
-			<description value="演示如何定义和引用转诊预约申请ActivityDefinition的简单示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
-		</resource>
-
-		<resource>
-			<reference>
-				<!-- ActivityDefinition资源示例 -->
-				<reference value="ActivityDefinition/ad-hospital-referral-response"/>
-			</reference>
-			<name value="转诊预约应答ActivityDefinition示例"/>
-			<description value="演示如何定义和引用转诊预约应答ActivityDefinition的简单示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
-		</resource>
+		
 
 		
 
 
-		<resource>
-			<reference>
-				<!-- ActivityDefinition资源示例 -->
-				<reference value="ActivityDefinition/ad-patient-arrive-response"/>
-			</reference>
-			<name value="患者到诊应答ActivityDefinition示例"/>
-			<description value="演示如何定义和引用患者到诊应答ActivityDefinition的简单示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
-		</resource>
-
-
-
-		<resource>
-			<reference>
-				<!-- ActivityDefinition资源示例 -->
-				<reference value="ActivityDefinition/ad-medical-records-submitted"/>
-			</reference>
-			<name value="上传完整病历ActivityDefinition示例"/>
-			<description value="演示如何定义和引用上传完整病历ActivityDefinition的简单示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/ActivityDefinition"/>
-		</resource>
-
-	
-
-
-
-
-		<resource>
-			<reference>
-				<!-- PlanDefinition资源示例 -->
-				<reference value="PlanDefinition/pd-hospital-referral"/>
-			</reference>
-			<name value="住院双转的流程定义PlanDefinition示例"/>
-			<description value="演示如何定义和引用住院双转的流程定义PlanDefinition的简单示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/PlanDefinition"/>
-		</resource>
-
-		<resource>
-			<reference>
-				<!-- Bundle资源示例 -->
-				<reference value="Bundle/hospital-referral-example"/>
-			</reference>
-			<name value="转诊预约申请消息交换Bundle示例"/>
-			<description value="演示如何定义和引用转诊申请实际交互场景的数据交换Bundle示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-		</resource>
-
 		
 
-		<resource>
-			<reference>
-				<!-- Bundle资源示例 -->
-				<reference value="Bundle/hospital-referral-response-example"/>
-			</reference>
-			<name value="转诊预约应答消息交换Bundle示例"/>
-			<description value="演示如何定义和引用转诊预约应答实际交互场景的数据交换Bundle示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-		</resource>
 
 
-		<resource>
-			<reference>
-				<!-- Bundle资源示例 -->
-				<reference value="Bundle/patient-arrive-response-example"/>
-			</reference>
-			<name value="患者到诊应答消息交换Bundle示例"/>
-			<description value="演示如何定义和引用患者到诊应答实际交互场景的数据交换Bundle示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-		</resource>
-		
-		<resource>
-			<reference>
-				<!-- Bundle资源示例 -->
-				<reference value="Bundle/medical-records-submitted-example"/>
-			</reference>
-			<name value="上传完整病历消息交换Bundle示例"/>
-			<description value="演示如何定义和引用上传完整病历实际交互场景的数据交换Bundle示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-		</resource>
-
-
-		<resource>
-			<reference>
-				<!-- Bundle-RESTful资源示例 -->
-				<reference value="Bundle/hospital-referral-RESTful-example"/>
-			</reference>
-			<name value="转诊预约申请RESTful接口的Bundle示例"/>
-			<description value="演示如何定义和引用转诊申请实际交互场景的RESTful数据交换Bundle示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-		</resource>
 
 		
-
-		<resource>
-			<reference>
-				<!-- Bundle资源示例 -->
-				<reference value="Bundle/hospital-referral-response-RESTful-example"/>
-			</reference>
-			<name value="转诊预约应答RESTful接口的Bundle示例"/>
-			<description value="演示如何定义和引用转诊预约应答实际交互场景的RESTful数据交换Bundle示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-		</resource>
-
-
-		<resource>
-			<reference>
-				<!-- Bundle资源示例 -->
-				<reference value="Bundle/patient-arrive-response-RESTful-example"/>
-			</reference>
-			<name value="患者到诊应答RESTful接口的Bundle示例"/>
-			<description value="演示如何定义和引用患者到诊应答实际交互场景的RESTful数据交换Bundle示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-		</resource>
-		
-		<resource>
-			<reference>
-				<!-- Bundle资源示例 -->
-				<reference value="Bundle/medical-records-submitted-RESTful-example"/>
-			</reference>
-			<name value="上传完整病历RESTful接口的Bundle示例"/>
-			<description value="演示如何定义和引用上传完整病历实际交互场景的RESTful数据交换Bundle示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
-		</resource>
-
-		<resource>
-			<reference>
-				<!-- MessageDefinition资源示例 -->
-				<reference value="MessageDefinition/md-hospital-referral"/>
-			</reference>
-			<name value="转诊预约申请消息定义MessageDefinition的示例"/>
-			<description value="演示如何定义和引用转诊申请消息定义MessageDefinition的示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/MessageDefinition"/>
-		</resource>
-
-		
-
-		<resource>
-			<reference>
-				<!-- MessageDefinition资源示例 -->
-				<reference value="MessageDefinition/md-hospital-referral-response"/>
-			</reference>
-			<name value="转诊预约应答消息定义MessageDefinition的示例"/>
-			<description value="演示如何定义和引用转诊预约应答消息定义MessageDefinition的示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/MessageDefinition"/>
-		</resource>
-
-
-		<resource>
-			<reference>
-				<!-- MessageDefinition资源示例 -->
-				<reference value="MessageDefinition/md-patient-arrive-response"/>
-			</reference>
-			<name value="患者到诊应答消息定义MessageDefinition的示例。"/>
-			<description value="演示如何定义和引用患者到诊应答消息定义MessageDefinition的示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/MessageDefinition"/>
-		</resource>
-		
-		<resource>
-			<reference>
-				<!-- MessageDefinition资源示例 -->
-				<reference value="MessageDefinition/md-medical-records-submitted"/>
-			</reference>
-			<name value="上传完整病历消息定义MessageDefinition的示例。"/>
-			<description value="演示如何定义和引用上传完整病历消息定义MessageDefinition的示例"/>
-			<exampleCanonical value="http://hl7.org/fhir/StructureDefinition/MessageDefinition"/>
-		</resource>
 
 		<resource>
 			<reference>
@@ -333,78 +339,6 @@
 			<name value="医疗机构的示例"/>
 			<description value="演示如何定义和引用医疗机构的示例"/>
 		</resource>
-
-		<resource>
-			<reference>
-				<!-- DocumentReference资源示例 -->
-				<reference value="DocumentReference/DocumentReference001-example"/>
-			</reference>
-			<name value="病历-转诊（院）记录示例"/>
-			<description value="演示如何定义和引用病历-转诊（院）记录的示例"/>
-		</resource>
-
-		<resource>
-			<reference>
-				<!-- DocumentReference资源示例 -->
-				<reference value="DocumentReference/DocumentReference002-example"/>
-			</reference>
-			<name value="病历-检验报告示例"/>
-			<description value="演示如何定义和引用病历-检验报告的示例"/>
-		</resource>
-
-		<resource>
-			<reference>
-				<!-- DocumentReference资源示例 -->
-				<reference value="DocumentReference/DocumentReference003-example"/>
-			</reference>
-			<name value="病历-医药处方示例"/>
-			<description value="演示如何定义和引用病历-医药处方的示例"/>
-		</resource>
-
-		<resource>
-			<reference>
-				<!-- DocumentReference资源示例 -->
-				<reference value="DocumentReference/DocumentReference004-example"/>
-			</reference>
-			<name value="病历-出院小结示例"/>
-			<description value="演示如何定义和引用出院小结的示例"/>
-		</resource>
-
-		<resource>
-			<reference>
-				<!-- DocumentReference资源示例 -->
-				<reference value="List/List001-example"/>
-			</reference>
-			<name value="患者张三的在院病历记录示例"/>
-			<description value="演示如何定义和引用患者张三在院病历记录示例"/>
-		</resource>
-
-
-		<resource>
-			<reference>
-				<!-- 参与者类型编码值域集 -->
-				<reference value="ValueSet/encounter-participant-type-vs"/>
-			</reference>
-			<name value="参与者类型编码"/>
-		</resource>
-
-		<resource>
-			<reference>
-				<!-- 应答预约状态编码值域集 -->
-				<reference value="ValueSet/participationstatus-vs"/>
-			</reference>
-			<name value="应答预约状态编码"/>
-		</resource>
-
-		<resource>
-			<reference>
-				<!-- 活动事件编码值域集 -->
-				<reference value="ValueSet/activity-code-vs"/>
-			</reference>
-			<name value="活动事件编码"/>
-		</resource>
-
-
 
 
 		<!--    <resource>
