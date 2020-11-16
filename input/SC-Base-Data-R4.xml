@@ -196,7 +196,7 @@
 		<resource>
 			<reference>
 				<!-- 本地资源定义（AdministrativeDivision） -->
-				<reference value="StructureDefinition/AdministrativeDivision"/>
+				<reference value="StructureDefinition/administrative-division"/>
 			</reference>
 			<description value="行政区划编码，中国县级以上行政区"/>
 		</resource>
