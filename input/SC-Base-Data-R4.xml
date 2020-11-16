@@ -41,7 +41,15 @@
 		<!--0..* 生成IG需求信息。其中grouping节点可由IGPublisher自动定义，也可手动定义个性化需求。 -->
 
 		
-	
+	<resource>
+			<reference>
+				<!-- 本地资源定义（HospitalBed） -->
+				<reference value="StructureDefinition/hospital-bed"/>
+			</reference>
+			<description value="描述医院病床信息"/>
+		</resource>
+
+		
 
 		<!--<resource>
 <reference>
@@ -51,23 +59,7 @@
 
 		
 
-		<resource>
-			<reference>
-				<!-- Patient资源示例 -->
-				<reference value="Patient/Patient001-example"/>
-			</reference>
-			<name value="患者张三的示例"/>
-			<description value="演示如何定义和引用患者张三的示例"/>
-		</resource>
-
-		<resource>
-			<reference>
-				<!-- Practitioner资源示例 -->
-				<reference value="Practitioner/Practitioner001-example"/>
-			</reference>
-			<name value="医护人员李明明的示例"/>
-			<description value="演示如何定义和引用医护人员李明明的示例"/>
-		</resource>
+		
 
 
 		<resource>
