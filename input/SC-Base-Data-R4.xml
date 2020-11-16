@@ -41,16 +41,17 @@
 		<!--0..* 生成IG需求信息。其中grouping节点可由IGPublisher自动定义，也可手动定义个性化需求。 -->
 
 		
-	<resource>
+	
+		<resource>
 			<reference>
-				<!-- 本地资源定义（HospitalBed） -->
-				<reference value="StructureDefinition/hospital-bed"/>
+				<!-- 本地资源定义（Hospital） -->
+				<reference value="StructureDefinition/Hospital"/>
 			</reference>
-			<description value="描述医院病床信息"/>
+			<description value="描述医院基本信息"/>
 		</resource>
 
 		
-		
+
 
 		<!--<resource>
 <reference>
