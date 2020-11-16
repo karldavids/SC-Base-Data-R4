@@ -50,7 +50,7 @@
 			<description value="描述医院基本信息"/>
 		</resource>
 
-
+ 
 		<resource>
 			<reference>
 				<!-- 资源示例 -->
