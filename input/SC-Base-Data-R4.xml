@@ -276,6 +276,7 @@
 			<description value="演示如何定义和引用岗位的简单示例"/>
 		</resource>
 
+
 		<resource>
 			<reference>
 				<!-- 资源示例 -->
