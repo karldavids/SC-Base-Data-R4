@@ -304,20 +304,6 @@
 			<description value="演示如何定义和引用患者的简单示例"/>
 		</resource>
 
-		
-
-
-		<!--<resource>
-<reference>
-<reference value="MyLogicalModel/AS"/>
-</reference>
-</resource> -->
-
-		
-
-		
-
-
 		<resource>
 			<reference>
 				<!-- Organization资源示例 -->
@@ -326,6 +312,158 @@
 			<name value="医疗机构的示例"/>
 			<description value="演示如何定义和引用医疗机构的示例"/>
 		</resource>
+
+
+
+		<resource>
+			<reference>
+				<!-- 国家GB级值域代码，中华人民共国县级及县级以上行政区划 -->
+				<reference value="ValueSet/administrative-division-of-China-vs"/>
+			</reference>
+			<name value="县级及县级以上行政区划"/>
+			<description value="国家GB级值域代码，中华人民共国县级及县级以上行政区划"/>
+		</resource>
+
+		<resource>
+			<reference>
+				<!-- 国家GB级值域代码，组织机构类型 -->
+				<reference value="ValueSet/Classification-for-organizations-vs"/>
+			</reference>
+			<name value="组织机构类型"/>
+			<description value="国家GB级值域代码，组织机构类型"/>
+		</resource>
+
+<resource>
+			<reference>
+				<!-- 经济类型分类 -->
+				<reference value="ValueSet/economic-type-classification-vs"/>
+			</reference>
+			<name value="经济类型分类"/>
+			<description value="国家GB级值域代码，经济类型分类"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 学历代码 -->
+				<reference value="ValueSet/education-vs"/>
+			</reference>
+			<name value="学历代码"/>
+			<description value="国家GB级值域代码，学历代码"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 家庭关系 -->
+				<reference value="ValueSet/family-relationship-vs"/>
+			</reference>
+			<name value="家庭关系"/>
+			<description value="国家GB级值域代码,家庭关系"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 组织机构层级种类 -->
+				<reference value="ValueSet/hierarchy-kind-vs"/>
+			</reference>
+			<name value="组织机构层级种类"/>
+			<description value="组织机构层级种类"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 医院等级 -->
+				<reference value="ValueSet/hospitallevel-vs"/>
+			</reference>
+			<name value="医院等级"/>
+			<description value="本标准是各级医院都必须达到的标准，也是医院开业资格的认定标准。"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- ICD-10形态学编码 -->
+				<reference value="ValueSet/ICD-10-morphology-coding-vs"/>
+			</reference>
+			<name value="ICD-10形态学编码"/>
+			<description value="国家GB级值域代码,ICD-10形态学编码"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 身份证件类别代码 -->
+				<reference value="ValueSet/identity-document-type-vs"/>
+			</reference>
+			<name value="身份证件类别代码"/>
+			<description value="CV级值域代码，整理自《WS 364-2011_卫生信息数据元值域代码》,身份证件类别代码"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 位置的物理类型 -->
+				<reference value="ValueSet/location-physical-type-vs"/>
+			</reference>
+			<name value="位置的物理类型"/>
+			<description value="位置的物理形式，例如建筑物、房间、车辆、道路。该处固定为  房间"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 位置功能类型 -->
+				<reference value="ValueSet/location-role-type-vs"/>
+			</reference>
+			<name value="位置功能类型"/>
+			<description value="位置功能类型，如门诊诊室，注射室，检查室等。"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 位置状态 -->
+				<reference value="ValueSet/location-status-vs"/>
+			</reference>
+			<name value="位置状态"/>
+			<description value="可描述该位置的状态，在位置状态发生变化的时候，作为标识符使用。"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 婚姻状况 -->
+				<reference value="ValueSet/marital-status-vs"/>
+			</reference>
+			<name value="婚姻状况"/>
+			<description value="国家GB级值域代码,婚姻状况"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 民族类别 -->
+				<reference value="ValueSet/nationalities-vs"/>
+			</reference>
+			<name value="民族类别"/>
+			<description value="国家GB级值域代码,民族类别"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 生理性别 -->
+				<reference value="ValueSet/physiological-gender-vs"/>
+			</reference>
+			<name value="生理性别"/>
+			<description value="国家GB级值域代码,生理性别"/>
+		</resource>
+
+
+
 
 
 		<!--    <resource>

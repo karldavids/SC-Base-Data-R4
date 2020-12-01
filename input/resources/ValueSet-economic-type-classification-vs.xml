@@ -10,7 +10,7 @@
     <title value="经济类型分类"/>
     <status value="draft"/>
     <publisher value="中华人民共和国国家质量监督检验检疫总局"/>
-    <description value="国家GB级值域代码"/>
+    <description value="国家GB级值域代码，经济类型分类"/>
     <jurisdiction>
         <coding>
             <system value="http://fhir.scwjxx.cn/Sichuan/ValueSet/countries-and-regions"/>
