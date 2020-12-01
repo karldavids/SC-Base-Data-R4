@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Address" />
   <meta>
@@ -71,7 +71,7 @@
       <binding>
         <strength value="required" />
         <description value="地址用途类别" />
-        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/address-use" />
+        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/address-use-vs" />
       </binding>
     </element>
     <element id="Address.type">

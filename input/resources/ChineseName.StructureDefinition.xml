@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ChineseName" />
   <meta>
@@ -50,7 +50,7 @@
       <binding>
         <strength value="required" />
         <description value="姓名类别" />
-        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/name-type" />
+        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/name-type-vs" />
       </binding>
     </element>
     <element id="HumanName.text">
