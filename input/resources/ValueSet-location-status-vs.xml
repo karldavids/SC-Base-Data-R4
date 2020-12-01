@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir"> 
 	<id value="location-status-vs"/>
- <url value="http://ValueSet.hl7fhir.cn/location-status-vs"/>
+ <url value="http://fhir.scwjxx.cn/Sichuan/ValueSet/location-status-vs"/>
  <name value="location-status-vs"/><!-- ?? 0..1 Name for this value set (computer friendly) -->
  <title value="位置状态"/><!-- 0..1 Name for this value set (human friendly) -->
  <status value="draft"/><!-- 1..1 draft | active | retired | unknown -->

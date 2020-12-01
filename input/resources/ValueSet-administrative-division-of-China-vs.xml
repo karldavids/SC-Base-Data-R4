@@ -4,7 +4,7 @@
     <meta>
         <lastUpdated value="2020-08-20T13:05:05.854+08:00"/>
     </meta>
-    <url value="http://ValueSet.hl7fhir.cn/administrative-division-of-China-vs"/>
+    <url value="http://fhir.scwjxx.cn/Sichuan/ValueSet/administrative-division-of-China-vs"/>
     <version value="V1"/>
     <name value="administrative division of China"/>
     <title value="中华人民共国县级及县级以上行政区划"/>
@@ -13,14 +13,14 @@
     <description value="国家GB级值域代码，中华人民共国县级及县级以上行政区划"/>
     <jurisdiction>
         <coding>
-            <system value="http://ValueSet.hl7fhir.cn/countries-and-regions"/>
+            <system value="http://fhir.scwjxx.cn/Sichuan/ValueSet/countries-and-regions"/>
             <code value="156"/>
         </coding>
         <text value="中国"/>
     </jurisdiction>
     <compose>
         <include>
-            <system value="http://CodeSystem.hl7fhir.cn/administrative-division-of-China"/>
+            <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/administrative-division-of-China"/>
         </include>
     </compose>
 </ValueSet>

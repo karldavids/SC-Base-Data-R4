@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir"> 
 	<id value="location-physical-type-vs"/>
- <url value="http://ValueSet.hl7fhir.cn/location-physical-type-vs"/>
+ <url value="http://fhir.scwjxx.cn/Sichuan/ValueSet/location-physical-type-vs"/>
  <name value="location-physical-type-vs"/><!-- ?? 0..1 Name for this value set (computer friendly) -->
  <title value="位置的物理类型"/><!-- 0..1 Name for this value set (human friendly) -->
  <status value="draft"/><!-- 1..1 draft | active | retired | unknown -->

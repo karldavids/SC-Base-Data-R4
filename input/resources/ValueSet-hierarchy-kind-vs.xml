@@ -4,7 +4,7 @@
     <meta>
         <lastUpdated value="2020-07-01T10:47:44.360+08:00"/>
     </meta>
-    <url value="http://ValueSet.hl7fhir.cn/hierarchy-kind-vs"/>
+    <url value="http://fhir.scwjxx.cn/Sichuan/ValueSet/hierarchy-kind-vs"/>
     <version value="V1"/>
     <name value="hierarchy-kind"/>
     <title value="组织机构层级种类"/>
@@ -16,22 +16,22 @@
         <total value="4"/>
         <offset value="0"/>
         <contains>
-            <system value="http://CodeSystem.hl7fhir.cn/hierarchy-kind"/>
+            <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/hierarchy-kind"/>
             <code value="1"/>
             <display value="医院集团"/>
         </contains>
         <contains>
-            <system value="http://CodeSystem.hl7fhir.cn/hierarchy-kind"/>
+            <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/hierarchy-kind"/>
             <code value="2"/>
             <display value="医院"/>
         </contains>
         <contains>
-            <system value="http://CodeSystem.hl7fhir.cn/hierarchy-kind"/>
+            <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/hierarchy-kind"/>
             <code value="3"/>
             <display value="院区"/>
         </contains>
         <contains>
-            <system value="http://CodeSystem.hl7fhir.cn/hierarchy-kind"/>
+            <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/hierarchy-kind"/>
             <code value="4"/>
             <display value="科室"/>
         </contains>
