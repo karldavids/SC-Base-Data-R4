@@ -50,7 +50,7 @@
       <binding>
         <strength value="required" />
         <description value="学历代码GB/T 4658" />
-        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/codes-for-record-of-formal-schooling-vs" />
+        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/education-vs" />
       </binding>
     </element>
   </differential>

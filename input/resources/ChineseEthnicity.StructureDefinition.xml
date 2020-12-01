@@ -50,7 +50,7 @@
       <binding>
         <strength value="required" />
         <description value="民族类别" />
-        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/nationalites-of-PRC-vs" />
+        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/nationalities-vs" />
       </binding>
     </element>
   </differential>

@@ -72,7 +72,7 @@
       <binding>
         <strength value="extensible" />
         <description value="CV02.01.101，整理自《WS 364-2011_卫生信息数据元值域代码》" />
-        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/certificate-category-vs" />
+        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/identity-document-type-vs" />
       </binding>
     </element>
     <element id="PractitionerRole.identifier:otherIdentifier">

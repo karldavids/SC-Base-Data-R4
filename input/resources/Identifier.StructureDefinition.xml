@@ -68,7 +68,7 @@
         </extension>
         <strength value="extensible" />
         <description value="待完善，目前暂用身份证件类别，CV02.01.101，整理自《WS 364-2011_卫生信息数据元值域代码》" />
-        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/certificate-category-vs" />
+        <valueSet value="http://fhir.scwjxx.cn/Sichuan/ValueSet/identity-document-type-vs" />
       </binding>
     </element>
     <element id="Identifier.system">

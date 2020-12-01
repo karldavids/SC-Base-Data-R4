@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ICD-10-morphology-coding-vs"/>
+  <meta>
+    <tag>
+      <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/range-type"/>
+      <code value="GB"/>
+      <display value="国家标准"/>
+    </tag>
+  </meta>
+  <url value="http://fhir.scwjxx.cn/Sichuan/ValueSet/ICD-10-morphology-coding-vs"/>
+  <name value="ICD 10 morphology coding"/>
+  <title value="ICD-10形态学编码"/>
+  <status value="draft"/>
+  <publisher value="中华人民共和国国家质量监督检验检疫总局"/>
+  <description value="国家GB级值域代码,ICD-10形态学编码"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/countries-and-regions"/>
+      <code value="156"/>
+    </coding>
+    <text value="中国"/>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/ICD-10-morphology-coding"/>
+    </include>
+  </compose>
+</ValueSet>

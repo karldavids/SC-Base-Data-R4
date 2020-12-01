@@ -92,7 +92,7 @@
   <extension url="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ChineseEthnicity">
     <valueCoding>
       <!-- 0..1 民族类别 CodeSystem url  地址-->
-      <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/nationalites-of-PRC"/>
+      <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/nationalities"/>
       <!-- 0..1 民族类别代码-->
       <code value="01"/>
       <!-- 0..1 民族类别说明 -->

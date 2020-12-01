@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="identity-document-type-vs"/>
+  <meta>
+    <tag>
+      <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/range-type"/>
+      <code value="WS-CV"/>
+      <display value="卫生行业CV标准"/>
+    </tag>
+  </meta>
+  <url value="http://fhir.scwjxx.cn/Sichuan/ValueSet/identity-document-type-vs"/>
+  <name value="identity document type"/>
+  <title value="身份证件类别"/>
+  <status value="draft"/>
+  <publisher value="中华人民共和国卫生部"/>
+  <description value="CV级值域代码，整理自《WS 364-2011_卫生信息数据元值域代码》,身份证件类别代码"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/countries-and-regions"/>
+      <code value="156"/>
+    </coding>
+    <text value="中国"/>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://fhir.scwjxx.cn/Sichuan/CodeSystem/identity-document-type"/>
+    </include>
+  </compose>
+</ValueSet>
