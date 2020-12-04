@@ -520,6 +520,18 @@
 		</resource>
 
 
+
+
+<resource>
+			<reference>
+				<!-- 职业证书 -->
+				<reference value="ValueSet/practitioner-qualification-vs"/>
+			</reference>
+			<name value="职业证书"/>
+			<description value="包括执照、证书、资格证、职称在内的值域集"/>
+		</resource>
+
+
 		<!--    <resource>
       <reference>
         <reference value="Library/example"/>
