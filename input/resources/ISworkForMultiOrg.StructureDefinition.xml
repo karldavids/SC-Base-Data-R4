@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="is-work-for-multi-org" />
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/is-work-for-multi-org" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/is-work-for-multi-org" />
   <name value="ISworkForMultiOrg" />
   <title value="是否多地点执业医师" />
   <status value="draft" />
@@ -29,7 +29,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/is-work-for-multi-org" />
+      <fixedUri value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/is-work-for-multi-org" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

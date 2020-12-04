@@ -5,7 +5,7 @@
     <versionId value="4" />
     <lastUpdated value="2020-03-30T15:04:02.242+00:00" />
   </meta>
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Identifier" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Identifier" />
   <name value="Identifier" />
   <title value="标识符" />
   <status value="draft" />
@@ -57,7 +57,7 @@
       <requirements value="允许用户在不知道标识符的命名系统时（Identifier.system的值）使用标识符。" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/CodeableConcept" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/CodeableConcept" />
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -110,7 +110,7 @@
       <label value="有效时段" />
       <type>
         <code value="Period" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Period" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Period" />
       </type>
     </element>
     <element id="Identifier.assigner">
@@ -120,7 +120,7 @@
       <definition value="管理或发布此标识符的机构" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Organization" />
+        <targetProfile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Organization" />
       </type>
     </element>
   </differential>

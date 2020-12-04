@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="date-start-work" />
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/date-start-work" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/date-start-work" />
   <name value="DateStartWork" />
   <title value="参加工作日期" />
   <status value="draft" />
@@ -29,7 +29,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/date-start-work" />
+      <fixedUri value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/date-start-work" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

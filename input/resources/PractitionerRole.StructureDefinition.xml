@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2020-05-11T06:32:26.321859+00:00" />
   </meta>
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/PractitionerRole" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/PractitionerRole" />
   <name value="PractitionerRole" />
   <title value="医务人员工作信息" />
   <status value="draft" />
@@ -55,7 +55,7 @@
       <definition value="角色的业务ID" />
       <type>
         <code value="Identifier" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Identifier" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Identifier" />
       </type>
     </element>
     <element id="PractitionerRole.identifier:identityDocument">
@@ -92,7 +92,7 @@
       <definition value="在此期间，该人员被授权担当该组织的这些角色" />
       <type>
         <code value="Period" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Period" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Period" />
       </type>
     </element>
     <element id="PractitionerRole.practitioner">
@@ -101,7 +101,7 @@
       <definition value="能够为组织提供卫生健康服务的从业者" />
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Reference" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Reference" />
       </type>
     </element>
     <element id="PractitionerRole.organization">
@@ -110,7 +110,7 @@
       <definition value="执行者执行相关角色的组织。" />
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Reference" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Reference" />
       </type>
     </element>
     <element id="PractitionerRole.code">
@@ -119,7 +119,7 @@
       <definition value="某个组织给一个提供医疗健康服务的人员授权的角色。" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/CodeableConcept" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/CodeableConcept" />
       </type>
       <binding>
         <strength value="extensible" />
@@ -133,7 +133,7 @@
       <definition value="从业人员的专业特长" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/CodeableConcept" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/CodeableConcept" />
       </type>
       <binding>
         <strength value="preferred" />
@@ -146,7 +146,7 @@
       <definition value="关联  位置信息，描述提供服务的位置" />
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Reference" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Reference" />
       </type>
     </element>
     <element id="PractitionerRole.healthcareService">
@@ -155,7 +155,7 @@
       <definition value="该工作者为该角色的组织/位置提供的医疗保健服务的列表" />
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Reference" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Reference" />
       </type>
     </element>
     <element id="PractitionerRole.telecom">
@@ -163,7 +163,7 @@
       <definition value="特定于角色/位置/服务的联系信息" />
       <type>
         <code value="ContactPoint" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ContactPoint" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ContactPoint" />
       </type>
     </element>
     <element id="PractitionerRole.availableTime">
@@ -185,7 +185,7 @@
       <path value="PractitionerRole.notAvailable.during" />
       <type>
         <code value="Period" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Period" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Period" />
       </type>
     </element>
     <element id="PractitionerRole.availabilityExceptions">
@@ -200,7 +200,7 @@
       <max value="0" />
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Reference" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Reference" />
       </type>
     </element>
   </differential>

@@ -5,7 +5,7 @@
     <versionId value="4" />
     <lastUpdated value="2019-12-11T06:30:42.764+00:00" />
   </meta>
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Patient" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Patient" />
   <name value="Patient" />
   <title value="患者" />
   <status value="draft" />
@@ -65,7 +65,7 @@
       <short value="民族类别" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ChineseEthnicity" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ChineseEthnicity" />
       </type>
     </element>
     <element id="Patient.extension:Nationality">
@@ -74,7 +74,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Nationality" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Nationality" />
       </type>
     </element>
     <element id="Patient.extension:DegreeOfEducation">
@@ -82,7 +82,7 @@
       <sliceName value="DegreeOfEducation" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/degree-of-education" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/degree-of-education" />
       </type>
     </element>
     <element id="Patient.extension:Occupations">
@@ -91,7 +91,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/occupations" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/occupations" />
       </type>
     </element>
     <element id="Patient.extension:PersonStatus">
@@ -99,7 +99,7 @@
       <sliceName value="PersonStatus" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/person-status" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/person-status" />
       </type>
     </element>
     <element id="Patient.extension:PoliticalAffiliation">
@@ -110,7 +110,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/politic-affiliation" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/politic-affiliation" />
       </type>
     </element>
     <element id="Patient.identifier">
@@ -128,7 +128,7 @@
       <requirements value="患者总会被分配特定的业务标识符。此本地规则中预置了对身份证、医保卡、健康卡的支持。" />
       <type>
         <code value="Identifier" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Identifier" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Identifier" />
       </type>
     </element>
     <element id="Patient.identifier:identityDocument">
@@ -170,7 +170,7 @@
       <definition value="符合中国人使用姓名的习惯，支持曾用名、别名，同时支持&quot;全名&quot;和&quot;姓+名&quot;的形式。" />
       <type>
         <code value="HumanName" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ChineseName" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ChineseName" />
       </type>
     </element>
     <element id="Patient.telecom">
@@ -178,7 +178,7 @@
       <definition value="电话号码，包括手机或座机。" />
       <type>
         <code value="ContactPoint" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Telephone" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Telephone" />
       </type>
     </element>
     <element id="Patient.gender">
@@ -208,7 +208,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/sexual-distinction-of-human" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/sexual-distinction-of-human" />
       </type>
       <binding>
         <strength value="required" />
@@ -234,7 +234,7 @@
       <definition value="使用中国行政区划表示的地址 （非GPS或经纬度地址）。" />
       <type>
         <code value="Address" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Address" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Address" />
       </type>
     </element>
     <element id="Patient.maritalStatus">
@@ -283,7 +283,7 @@
       <definition value="联系人姓名" />
       <type>
         <code value="HumanName" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ChineseName" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ChineseName" />
       </type>
     </element>
     <element id="Patient.contact.telecom">
@@ -292,7 +292,7 @@
       <definition value="联系人电话号码，包括手机或座机." />
       <type>
         <code value="ContactPoint" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Telephone" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Telephone" />
       </type>
     </element>
     <element id="Patient.contact.address">
@@ -300,7 +300,7 @@
       <definition value="使用中国行政区划表示的地址  （非GPS或经纬度地址）。" />
       <type>
         <code value="Address" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Address" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Address" />
       </type>
     </element>
     <element id="Patient.contact.gender">
@@ -331,7 +331,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/sexual-distinction-of-human" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/sexual-distinction-of-human" />
       </type>
       <binding>
         <strength value="required" />
@@ -345,14 +345,14 @@
       <definition value="联系人所代表的组织或联系人工作的组织。" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Organization" />
+        <targetProfile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Organization" />
       </type>
     </element>
     <element id="Patient.contact.period">
       <path value="Patient.contact.period" />
       <type>
         <code value="Period" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Period" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Period" />
       </type>
     </element>
     <element id="Patient.communication">
@@ -370,7 +370,7 @@
       <definition value="保管此患者病历的组织机构" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Organization" />
+        <targetProfile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Organization" />
       </type>
     </element>
     <element id="Patient.link">
@@ -388,7 +388,7 @@
       <comment value="仅用于关联疑似同一患者的记录。去掉了对相关人资源(RelatedPerson)的链接" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Patient" />
+        <targetProfile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Patient" />
       </type>
     </element>
     <element id="Patient.link.type">

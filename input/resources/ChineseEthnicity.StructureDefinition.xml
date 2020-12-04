@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ChineseEthnicity" />
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ChineseEthnicity" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ChineseEthnicity" />
   <name value="ChineseEthnicity" />
   <title value="民族" />
   <status value="draft" />
@@ -38,7 +38,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ChineseEthnicity" />
+      <fixedUri value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ChineseEthnicity" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

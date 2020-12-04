@@ -5,7 +5,7 @@
     <versionId value="2" />
     <lastUpdated value="2020-03-16T15:16:22.934+00:00" />
   </meta>
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/CodeableConcept" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/CodeableConcept" />
   <name value="CodeableConcept" />
   <title value="可编码概念" />
   <status value="draft" />
@@ -47,7 +47,7 @@
       <requirements value="允许在代码系统中使用备用编码，并支持转换为其他代码系统。" />
       <type>
         <code value="Coding" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Coding" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Coding" />
       </type>
     </element>
     <element id="CodeableConcept.text">

@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2019-12-11T16:18:37.264+00:00" />
   </meta>
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Address" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Address" />
   <name value="Address" />
   <title value="地址" />
   <status value="draft" />
@@ -61,7 +61,7 @@
       <short value="行政区划编码" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/administrative-division" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/administrative-division" />
       </type>
     </element>
     <element id="Address.use">
@@ -116,7 +116,7 @@
       <definition value="在哪个时段使用此地址。由开始和结束时间以及可选时间定义的时间段范围。" />
       <type>
         <code value="Period" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Period" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Period" />
       </type>
     </element>
   </differential>

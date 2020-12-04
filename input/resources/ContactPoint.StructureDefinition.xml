@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2019-12-11T06:26:55.852+00:00" />
   </meta>
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ContactPoint" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ContactPoint" />
   <name value="ContactPoint" />
   <title value="联系方式" />
   <status value="draft" />
@@ -78,7 +78,7 @@
       <path value="ContactPoint.period" />
       <type>
         <code value="Period" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Period" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Period" />
       </type>
     </element>
   </differential>

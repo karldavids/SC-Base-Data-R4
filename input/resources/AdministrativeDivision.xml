@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="administrative-division" />
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/administrative-division" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/administrative-division" />
   <name value="AdministrativeDivision" />
   <title value="行政区" />
   <status value="draft" />
@@ -44,7 +44,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/administrative-division" />
+      <fixedUri value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/administrative-division" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

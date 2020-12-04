@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sexual-distinction-of-human" />
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/sexual-distinction-of-human" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/sexual-distinction-of-human" />
   <name value="SexualDistinctionOfHuman" />
   <title value="生理性别" />
   <status value="draft" />
@@ -41,13 +41,13 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/sexual-distinction-of-human" />
+      <fixedUri value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/sexual-distinction-of-human" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
         <code value="Coding" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Coding" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Coding" />
       </type>
       <binding>
         <strength value="required" />

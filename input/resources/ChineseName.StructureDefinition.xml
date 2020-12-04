@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2019-12-11T05:21:01.594+00:00" />
   </meta>
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ChineseName" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ChineseName" />
   <name value="ChineseName" />
   <title value="姓名" />
   <status value="draft" />
@@ -88,7 +88,7 @@
       <requirements value="允许将姓名置于历史场景中。" />
       <type>
         <code value="Period" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Period" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Period" />
       </type>
     </element>
   </differential>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="hospital-bed" />
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/hospital-bed" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/hospital-bed" />
   <name value="HospitalBed" />
   <title value="病床" />
   <status value="draft" />
@@ -39,7 +39,7 @@
       </slicing>
       <type>
         <code value="Identifier" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Identifier" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Identifier" />
       </type>
     </element>
     <element id="Location.identifier:hospitalBedIdentifier">
@@ -85,7 +85,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/resource-status" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/resource-status" />
       </type>
       <binding>
         <strength value="required" />
@@ -98,7 +98,7 @@
       <definition value="业务状况包括与床(但也可以适用于房间/单位/椅子/等)最相关的业务价值。例如隔离装置/透析椅)。这通常包括诸如污染、清洁和其他活动(如维护)等概念。" />
       <type>
         <code value="Coding" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Coding" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Coding" />
       </type>
       <binding>
         <strength value="preferred" />
@@ -136,7 +136,7 @@
       </slicing>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/CodeableConcept" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/CodeableConcept" />
       </type>
     </element>
     <element id="Location.type:LocationRoleType">
@@ -166,7 +166,7 @@
       <definition value="病床的详细地址" />
       <type>
         <code value="Address" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Address" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Address" />
       </type>
     </element>
     <element id="Location.physicalType">
@@ -175,7 +175,7 @@
       <definition value="位置的物理形式，例如建筑物、房间、车辆、道路。&#xD;&#xA;该处描述病床，固定为  床" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/CodeableConcept" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/CodeableConcept" />
       </type>
       <binding>
         <strength value="example" />
@@ -192,7 +192,7 @@
       <definition value="管理该病床的科室/部门" />
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Reference" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Reference" />
       </type>
     </element>
     <element id="Location.partOf">
@@ -201,7 +201,7 @@
       <definition value="引用一个病房资源" />
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Reference" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Reference" />
       </type>
     </element>
     <element id="Location.hoursOfOperation">

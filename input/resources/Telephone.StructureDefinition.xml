@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2019-12-11T06:26:55.852+00:00" />
   </meta>
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Telephone" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Telephone" />
   <name value="Telephone" />
   <title value="电话号码" />
   <status value="draft" />
@@ -31,7 +31,7 @@
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="ContactPoint" />
-  <baseDefinition value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ContactPoint" />
+  <baseDefinition value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ContactPoint" />
   <derivation value="constraint" />
   <differential>
     <element id="ContactPoint">

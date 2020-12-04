@@ -5,7 +5,7 @@
     <versionId value="1" />
     <lastUpdated value="2020-05-11T06:32:25.0842473+00:00" />
   </meta>
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Person" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Person" />
   <name value="Person" />
   <title value="居民" />
   <status value="draft" />
@@ -40,7 +40,7 @@
       <definition value="教育背景，非学位" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/degree-of-education" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/degree-of-education" />
       </type>
     </element>
     <element id="Person.extension:nationality">
@@ -49,7 +49,7 @@
       <definition value="是哪（几）国的居民" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Nationality" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Nationality" />
       </type>
     </element>
     <element id="Person.extension:ethnicity">
@@ -58,7 +58,7 @@
       <definition value="中华56个民族中的哪个。仅供华人填写" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ChineseEthnicity" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ChineseEthnicity" />
       </type>
     </element>
     <element id="Person.extension:birthPlace">
@@ -68,7 +68,7 @@
       <definition value="籍贯，即出生地的行政区" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/AdministrativeDivision" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/AdministrativeDivision" />
       </type>
     </element>
     <element id="Person.name">
@@ -77,14 +77,14 @@
       <max value="1" />
       <type>
         <code value="HumanName" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ChineseName" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ChineseName" />
       </type>
     </element>
     <element id="Person.telecom">
       <path value="Person.telecom" />
       <type>
         <code value="ContactPoint" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ContactPoint" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ContactPoint" />
       </type>
     </element>
     <element id="Person.birthDate">
@@ -96,7 +96,7 @@
       <path value="Person.address" />
       <type>
         <code value="Address" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Address" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Address" />
       </type>
     </element>
     <element id="Person.photo">
@@ -105,15 +105,15 @@
       <definition value="一种图像，可以显示为一个人的缩略图，以增强个人的识别。" />
       <type>
         <code value="Attachment" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Attachment" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Attachment" />
       </type>
     </element>
     <element id="Person.managingOrganization">
       <path value="Person.managingOrganization" />
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Reference" />
-        <targetProfile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Organization" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Reference" />
+        <targetProfile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Organization" />
       </type>
     </element>
     <element id="Person.active">
@@ -125,11 +125,11 @@
       <path value="Person.link.target" />
       <type>
         <code value="Reference" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Reference" />
-        <targetProfile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Person" />
-        <targetProfile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Patient" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Reference" />
+        <targetProfile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Person" />
+        <targetProfile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Patient" />
         <targetProfile value="http://StructureDefinition/hl7fhir.cn/Practitioner" />
-        <targetProfile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/RelatedPerson" />
       </type>
     </element>
   </differential>

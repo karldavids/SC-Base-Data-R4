@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ContactDetail" />
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ContactDetail" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ContactDetail" />
   <name value="ContactDetail" />
   <title value="联系人信息" />
   <status value="draft" />
@@ -36,7 +36,7 @@
       <comment value="可以是网站、电子邮件地址、电话号码等。" />
       <type>
         <code value="ContactPoint" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/ContactPoint" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/ContactPoint" />
       </type>
     </element>
     <element id="ContactDetail.telecom.period">

@@ -5,7 +5,7 @@
     <versionId value="2" />
     <lastUpdated value="2020-03-16T15:00:01.671+00:00" />
   </meta>
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Coding" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Coding" />
   <name value="Coding" />
   <title value="术语编码类型" />
   <status value="draft" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="politic-affiliation" />
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/politic-affiliation" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/politic-affiliation" />
   <name value="PoliticalAffiliation" />
   <title value="政治面貌" />
   <status value="draft" />
@@ -61,7 +61,7 @@
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="Coding" />
-        <profile value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Coding" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Coding" />
       </type>
       <binding>
         <strength value="required" />
@@ -97,7 +97,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/politic-affiliation" />
+      <fixedUri value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/politic-affiliation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

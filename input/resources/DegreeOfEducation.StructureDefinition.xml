@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="degree-of-education" />
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/degree-of-education" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/degree-of-education" />
   <name value="DegreeOfEducation" />
   <title value="学历" />
   <status value="draft" />
@@ -38,7 +38,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/degree-of-education" />
+      <fixedUri value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/degree-of-education" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

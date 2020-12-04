@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="SimpleQuantity" />
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/SimpleQuantity" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/SimpleQuantity" />
   <name value="SimpleQuantity" />
   <title value="简单数量类型" />
   <status value="draft" />
@@ -20,7 +20,7 @@
   <kind value="complex-type" />
   <abstract value="false" />
   <type value="Quantity" />
-  <baseDefinition value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Quantity" />
+  <baseDefinition value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Quantity" />
   <derivation value="constraint" />
   <differential>
     <element id="Quantity">

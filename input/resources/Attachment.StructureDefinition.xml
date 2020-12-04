@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Attachment" />
-  <url value="http://fhir.scwjxx.cn/SiChuan/StructureDefinition/Attachment" />
+  <url value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/Attachment" />
   <name value="Attachment" />
   <title value="附件信息" />
   <status value="draft" />
