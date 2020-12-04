@@ -315,6 +315,25 @@
 
 
 
+<resource>
+			<reference>
+				<!-- 联系方式的用途 -->
+				<reference value="ValueSet/contact-point-use-vs"/>
+			</reference>
+			<name value="联系方式的用途"/>
+			<description value="联系方式的用途 私人用、家用、公司、曾用"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 联系方式种类 -->
+				<reference value="ValueSet/contact-point-system-vs"/>
+			</reference>
+			<name value="联系方式种类"/>
+			<description value="联系方式所属体系（种类），如：电话、传真、邮件、微信、QQ等"/>
+		</resource>
+
 		<resource>
 			<reference>
 				<!-- 国家GB级值域代码，中华人民共国县级及县级以上行政区划 -->
@@ -431,6 +450,15 @@
 			<name value="位置状态"/>
 			<description value="可描述该位置的状态，在位置状态发生变化的时候，作为标识符使用。"/>
 		</resource>
+		
+		<resource>
+			<reference>
+				<!-- 位置操作状态 -->
+				<reference value="ValueSet/operation-status-vs"/>
+			</reference>
+			<name value="位置操作状态"/>
+			<description value="位置操作状态  开放，维护，暂停关闭。"/>
+		</resource>
 
 
 <resource>
@@ -463,7 +491,33 @@
 		</resource>
 
 
+<resource>
+			<reference>
+				<!-- 专业特长 -->
+				<reference value="ValueSet/practice-setting-code-vs"/>
+			</reference>
+			<name value="专业特长"/>
+			<description value="专业特长如：  骨科门诊、牙科门诊、心内科门诊。"/>
+		</resource>
 
+<resource>
+			<reference>
+				<!-- 名字类别 -->
+				<reference value="ValueSet/name-type-vs"/>
+			</reference>
+			<name value="名字类别"/>
+			<description value="名字类别  如现用名、曾用名、别名"/>
+		</resource>
+
+
+<resource>
+			<reference>
+				<!-- 地址类型 -->
+				<reference value="ValueSet/address-use-vs"/>
+			</reference>
+			<name value="地址类型"/>
+			<description value="地址类型，包括家庭住址、户口地址、工作地址、曾住地等"/>
+		</resource>
 
 
 		<!--    <resource>
