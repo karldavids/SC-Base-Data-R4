@@ -68,7 +68,7 @@
       <definition value="籍贯，即出生地的行政区" />
       <type>
         <code value="Extension" />
-        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/AdministrativeDivision" />
+        <profile value="http://fhir.scwjxx.cn/Sichuan/StructureDefinition/administrative-division" />
       </type>
     </element>
     <element id="Person.name">
